@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AQUI COMEÇA O CÓDIGO PARA COLOCAR UMA FONTE, CASO QUEIRA ALTERAR, MUDE DAQUI-->
+     <!-- PARA SABER COMO ADICIONAR FONTES, VER AULA 3 DO ALURA DO CURSO REFERENTE A ESTE MÓDULO-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- ATÉ AQUI-->
+    <title> Fnaf 1: A noite que nunca acaba </title>
+</head>
+<body>
+    <main>
+
+      <!-- ESCREVA SUA ESTÓRIA AQUI EM BAIXO NOS LOCAIS INDICADOS-->
+      <!-- PARA TER NOTA MÁXIMA, DEVE TER SEU TRABALHO DEVE TER NO MINÍMO 10 PASSOS DIFERENTES, SEM LIMITE MÁXIMO-->
+      <!-- ADICIONE IMAGENS REFERENTES A SUA HISTÓRIA EM CADA UM DOS PASSOS-->
+      <!-- NÃO ESQUEÇA DE MUDAR O NOME DOS BOTÕES SUBSTITUÍNDO, POR EXEMPLO: BOTÃO 1 PELA OPÇÃO QUE VOCÊ QUER-->  
+
+      <!-- QUANDO ADICIONAR MAIS PASSOS, DEVE, NECESSARIAMENTE, MUDAR O ID PARA UM NÚMERO AINDA NÃO ESCOLHIDO COM UM BOTÃO ASSOCIADO A ELE (EXEMPLO BOTÃO 2 VAI PARA O PASSO 2)-->
+      <!-- DATA MÁXIMA DE ENVIO 17/10--> 
+
+      <div class="passo ativo" id="passo-0">
+            <img src="https://www.pngall.com/wp-content/uploads/15/Five-Nights-At-Freddys-Logo-PNG-Image-HD.png">
+            <p> Olá, bem vindo(a) a Freddy Fazbear's Pizza. Hoje você iniciará seu primeiro dia no trabalho. Para começarmos, você quer ir direto para sua sala de monitoramento ou ir passear um pouco pela pizzaria? </p>
+            <button class="btn-proximo" data-proximo="1">Ir para a sala de monitoramento.</button>
+            <button class="btn-proximo" data-proximo="2">Conhecer a pizzaria.</button>
+        </div>
+
+
+
+        <div class="passo" id="passo-1">
+            <img src="https://i.imgur.com/0Qe5eqU.jpg">
+            <p>Ótimo! você quer começar a olhar as câmeras ou quer guardar energia? </p>
+            <button class="btn-proximo" data-proximo="3">Olhar as câmeras.</button>
+            <button class="btn-proximo" data-proximo="4">Guardar energia.</button>
+        </div>
+
+
+
+        <div class="passo" id="passo-2">
+            <img src="https://i.redd.it/recreating-the-fnaf-1-pizzeria-other-pictures-from-my-v0-ewipu8xhm52c1.jpg?width=1613&format=pjpg&auto=webp&s=712d818607f3a18ae63c87b9de5aee7e361c5b00">
+            <p>Você está no refeitório! quer ir conhecer o palco dos animatronics?</p>
+            <button class="btn-proximo" data-proximo="5">Sim, quero ir conhecer.</button>
+            <button class="btn-proximo" data-proximo="6">Não, quero ir para a sala de monitoramento.</button>
+        </div>
+
+
+
+        <div class="passo" id="passo-3">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/956336699061304542/FF261B87E2A376AD252621B7E658817BF6CCE7B5/">
+            <p>Parece que por aqui esta tudo tranquilo, qual a próxima câmera que você deseja olhar?</p>
+            <button class="btn-proximo" data-proximo="7">CAM 1B</button>
+            <button class="btn-proximo" data-proximo="8">CAM 2B</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="https://i.imgur.com/0Qe5eqU.jpg">
+            <p>Você guarda energia porém escuta um barulho do lado de fora da sala, você resolve olhar?</p>
+            <button class="btn-proximo" data-proximo="9">Vou nas câmeras e olho a câmera 7</button>
+            <button class="btn-proximo" data-proximo="10">Não olho as câmeras</button>
+        </div>
+
+
+        <div class="passo" id="passo-5">
+            <img src="https://www.otempo.com.br/adobe/dynamicmedia/deliver/dm-aid--db020752-cdf4-46e1-887f-e4364f3d81ba/entretenimento-como-os-animatronicos-bizarros-de-five-nights-at-freddys-foram-feitos-1708751155.jpg?preferwebp=true&quality=82&width=1200&height=630">
+            <p>Que legal, está é a sua primeira vez vendo animatronics de perto. Surge uma curiosidade em você, como são os animatronics por dentro? A partir dessa curiosidade, qual decisão você irá tomar</p>
+            <button class="btn-proximo" data-proximo="11">Me aproximar perto da Chica</button>
+            <button class="btn-proximo" data-proximo="12">Esquecer isso e ir para a sala de monitoramento</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="https://i.imgur.com/0Qe5eqU.jpg">
+            <p>Você foi em segurança para a sala de monitoramento. Chegando lá, o que você decide fazer?</p>
+            <button class="btn-proximo" data-proximo="13">Dar uma cochilada pois não observou nenhuma movimentação suspeita</button>
+            <button class="btn-proximo" data-proximo="14">Olhar as câmeras</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="https://i.ytimg.com/vi/EMuas6U1xa8/maxresdefault.jpg">
+            <p>Ops! parece que tem alguém te observando de longe...</p>
+            <button class="btn-proximo" data-proximo="15">Tranco as portas</button>
+            <button class="btn-proximo" data-proximo="16">Mantenho as portas e a luz acessa</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="https://images.steamusercontent.com/ugc/1603799730914050394/12ADA66ACC273FCC7DEDC2B18B3AF36E7FFF12AF/">
+            <p>Tudo está tranquilo por aqui!</p>
+            <button class="btn-proximo" data-proximo="17">Ver as câmeras</button>
+            <button class="btn-proximo" data-proximo="18">descansar um pouco</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="https://m.media-amazon.com/images/I/818VOi9Z32L.png">
+            <p>Chica está te observando.</p>
+            <button class="btn-proximo" data-proximo="19">Fechar as portas</button>
+            <button class="btn-proximo" data-proximo="20">Sair das câmeras por um tempo para não gastar energia</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="https://miro.medium.com/1*yxszPfuqgIcapz_iDfsEMQ.jpeg">
+            <p>Ela apareceu.</p>
+            <button class="btn-proximo" data-proximo="21">Fechar as portas</button>
+            <button class="btn-proximo" data-proximo="22">Corra para a esquerda</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/5/50/Chica%27s_jumpscare_gif.gif/revision/latest?cb=20240622070716">
+            <p>A Chica te pegou.</p>
+            <button class="btn-proximo" data-proximo="23">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="24">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="https://i.imgur.com/0Qe5eqU.jpg">
+            <p>Você chegou na sala de monitoramento mas percebe que esqueceu sua lanterna no palco do foxy. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="25">Ir lá buscar</button>
+            <button class="btn-proximo" data-proximo="26">Ficar sem lanterna</button>
+        </div>
+        
+        <div class="passo" id="passo-13">
+            <img src="https://i.imgur.com/0Qe5eqU.jpg">
+            <p>Você cochilou até 3am, quer dormir mais?</p>
+            <button class="btn-proximo" data-proximo="27">Dormir até 4am</button>
+            <button class="btn-proximo" data-proximo="28">Ficar acordado(a)</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <img src="https://m.media-amazon.com/images/I/818VOi9Z32L.png">
+            <p>Você olhou as câmeras e viu algo te observando, o que você irá fazer?</p>
+            <button class="btn-proximo" data-proximo="29">Fechar a porta da direita e ficar monitorando</button>
+            <button class="btn-proximo" data-proximo="30">Monitorar as câmeras</button>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <img src="https://pm1.aminoapps.com/6422/52ecd90fe347ca8a0d04357079b5a7e53d7f356f_hq.jpg">
+            <p>Após trancar as portas, você decide:</p>
+            <button class="btn-proximo" data-proximo="31">Ficar apenas com as portas trancadas</button>
+            <button class="btn-proximo" data-proximo="32">Olhar as câmeras</button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/e/e2/Bonnie%27s_jumpscare_gif.gif/revision/latest?cb=20240622070605">
+            <p>O bonnie te pegou.</p>
+            <button class="btn-proximo" data-proximo="33">Sair</button>
+            <button class="btn-proximo" data-proximo="34">Reiniciar jogo(reinicie a página)</button>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <img src="https://cdn.mos.cms.futurecdn.net/747a05ae00ceca9ec07cdf6c16a0ad11.png">
+            <p>Alguém está te observando.</p>
+            <button class="btn-proximo" data-proximo="35">Ficar olhando a câmera 1B</button>
+            <button class="btn-proximo" data-proximo="36">Monitorar a câmera 2B</button>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/3/3c/Freddy%27s_jumpscare_gif_%28power_active%29.gif/revision/latest?cb=20240622070359">
+            <p>Freddy não gostou do seu cochilo.</p>
+            <button class="btn-proximo" data-proximo="37">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="38">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-19">
+            <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/3/38/Five-nights-at-freddys-vr-help-wanted-screenshot-16-ps4-us-29apr2019.jpeg/revision/latest?cb=20190505164356&path-prefix=pl">
+            <p>Ela veio te fazer companhia.</p>
+            <button class="btn-proximo" data-proximo="39">Ficar com a porta fechada e luz acessa até ela ir embora (-35% de energia)</button>
+            <button class="btn-proximo" data-proximo="40">Ficar com a porta trancada por 2 minutos</button>
+        </div>
+
+        <div class="passo" id="passo-20">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/5/50/Chica%27s_jumpscare_gif.gif/revision/latest?cb=20240622070716">
+            <p>Ela te pegou.</p>
+            <button class="btn-proximo" data-proximo="41">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="42">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-21">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5a8db1c1-7534-4289-86d2-e38ccb31d756/de2ua3l-92f79081-100d-4a7d-96f9-74702da34df4.png/v1/fill/w_1280,h_861,q_80,strp/fnaf_1_office_doors_by_zueiroooooooooooo_de2ua3l-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODYxIiwicGF0aCI6Ii9mLzVhOGRiMWMxLTc1MzQtNDI4OS04NmQyLWUzOGNjYjMxZDc1Ni9kZTJ1YTNsLTkyZjc5MDgxLTEwMGQtNGE3ZC05NmY5LTc0NzAyZGEzNGRmNC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.10N_npWgtzZ-62fhsmxb1oexyjRYvxDzw4scOjLMxms">
+            <p>Após trancar as portas, você decide:</p>
+            <button class="btn-proximo" data-proximo="43">Ficar apenas com as portas trancadas</button>
+            <button class="btn-proximo" data-proximo="44">Olhar as câmeras</button>
+        </div>
+
+         <div class="passo" id="passo-22">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/1/1b/Foxy%27s_jumpscare_gif.gif/revision/latest?cb=20240622070758">
+            <p>O foxy estava te esperando.</p>
+            <button class="btn-proximo" data-proximo="45">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="46">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-25">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/74fec01f-c4bc-4737-b2d6-469f43f62cef/dfqm0o3-0d0ee8c4-47c0-4304-a17b-cca22f6297ce.png/v1/fill/w_1280,h_720,q_80,strp/pirate_cove__empty__fnaf_1_remaster__by_mysticmcmfp_dfqm0o3-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6Ii9mLzc0ZmVjMDFmLWM0YmMtNDczNy1iMmQ2LTQ2OWY0M2Y2MmNlZi9kZnFtMG8zLTBkMGVlOGM0LTQ3YzAtNDMwNC1hMTdiLWNjYTIyZjYyOTdjZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.NA4ZqjzuWy1zWRrIGtnh7SdmfBJmLWF-1DsqblRBlZk">
+            <p>O foxy sumiu</p>
+            <button class="btn-proximo" data-proximo="47">Voltar para a sala de monitoramento</button>
+            <button class="btn-proximo" data-proximo="48">Olhar o palco dele</button>
+        </div>
+
+        
+        <div class="passo" id="passo-26">
+            <img src="https://i.ytimg.com/vi/NigLg8fQHF0/hq720.jpg?sqp=-oaymwE8CK4FEIIDSFryq4qpAy4IARUAAAAAGAElAADIQj0AgKJD8AEB-AH0BoAC0AWKAg0IABABGIwBIFMoFzAP&rs=AOn4CLAujNR1Y3n3EJau7rrZ3kgxxpxWBQ">
+            <p>Você está no escuro e escuta um barulho vindo da sua esquerda</p>
+            <button class="btn-proximo" data-proximo="49">Sair correndo</button>
+            <button class="btn-proximo" data-proximo="50">Olhar as câmeras</button>
+        </div>
+
+        <div class="passo" id="passo-27">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/1/1b/Foxy%27s_jumpscare_gif.gif/revision/latest?cb=20240622070758">
+            <p>Foxy te pegou</p>
+            <button class="btn-proximo" data-proximo="51">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="52">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-28">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/e/e2/Bonnie%27s_jumpscare_gif.gif/revision/latest?cb=20240622070605">
+            <p>Bonnie te pegou.</p>
+            <button class="btn-proximo" data-proximo="53">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="54">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-29">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/e/e2/Bonnie%27s_jumpscare_gif.gif/revision/latest?cb=20240622070605">
+            <p>Bonnie te pegou.</p>
+            <button class="btn-proximo" data-proximo="55">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="56">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-30">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/5/50/Chica%27s_jumpscare_gif.gif/revision/latest?cb=20240622070716">
+            <P>Ela veio atrás de você</p>
+            <button class="btn-proximo" data-proximo="58">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="59">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-31">
+            <img src="https://pm1.aminoapps.com/6422/52ecd90fe347ca8a0d04357079b5a7e53d7f356f_hq.jpg">
+            <P>Você perdeu 40% de energia</p>
+            <button class="btn-proximo" data-proximo="60">Continuar com as portas fechadas</button>
+            <button class="btn-proximo" data-proximo="61">Deixar a porta aberta</button>
+        </div>
+
+        <div class="passo" id="passo-32">
+            <img src="https://miro.medium.com/v2/resize:fit:1200/0*WSEG7KcNxNQkBaJ3.jpg">
+            <P>Ela veio te fazer uma visita</p>
+            <button class="btn-proximo" data-proximo="62">Continuar com a porta da direita fechada</button>
+            <button class="btn-proximo" data-proximo="63">Deixar a porta aberta</button>
+        </div>
+
+         <div class="passo" id="passo-35">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/5/50/Chica%27s_jumpscare_gif.gif/revision/latest?cb=20240622070716">
+            <P>Ela veio te pegar</p>
+            <button class="btn-proximo" data-proximo="64">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="65">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-36">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/e/e2/Bonnie%27s_jumpscare_gif.gif/revision/latest?cb=20240622070605">
+            <P>Ele veio te pegar</p>
+            <button class="btn-proximo" data-proximo="66">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="67">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-39">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/5/50/Chica%27s_jumpscare_gif.gif/revision/latest?cb=20240622070716">
+            <P>Ela te pegou</p>
+            <button class="btn-proximo" data-proximo="68">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="69">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-43">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/5/50/Chica%27s_jumpscare_gif.gif/revision/latest?cb=20240622070716">
+            <P>Você gastou 30% de energia, você abriu a porta e ela ainda estava lá</p>
+            <button class="btn-proximo" data-proximo="70">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="71">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-43">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/5/50/Chica%27s_jumpscare_gif.gif/revision/latest?cb=20240622070716">
+            <P>Ela te pegou desprevenido(a)</p>
+            <button class="btn-proximo" data-proximo="72">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="73">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-47">
+            <img src="https://pa1.aminoapps.com/7853/977a863c92aea1dd8d5fc440ff32c0d61ff637aer1-500-288_hq.gif">
+            <P>Ele veio atrás de você</P>
+            <button class="btn-proximo" data-proximo="74">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="75">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-48">
+            <img src="https://i.pinimg.com/originals/44/b6/7d/44b67d5e479d46f672031fb9ee0229cf.gif">
+            <P>Pelo visto ele estava lá</P>
+            <button class="btn-proximo" data-proximo="76">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="77">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-49">
+            <img src="https://i.pinimg.com/originals/44/b6/7d/44b67d5e479d46f672031fb9ee0229cf.gif">
+            <P>Ele estava te esperando</P>
+            <button class="btn-proximo" data-proximo="78">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="79">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-50">
+            <img src="https://i.pinimg.com/originals/44/b6/7d/44b67d5e479d46f672031fb9ee0229cf.gif">
+            <P>Ele estava te esperando</P>
+            <button class="btn-proximo" data-proximo="80">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="81">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-51">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/57d17456-d9fa-4ee8-a444-b5444ca9230e/dbw8uy3-138b24c9-ecaa-4bd3-9212-985ce4b404ed.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi81N2QxNzQ1Ni1kOWZhLTRlZTgtYTQ0NC1iNTQ0NGNhOTIzMGUvZGJ3OHV5My0xMzhiMjRjOS1lY2FhLTRiZDMtOTIxMi05ODVjZTRiNDA0ZWQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9zTPnhBTbjmEqADCXxWiqkPwQnt1LcDkq2oxSGxsyfY">
+            <P>Você deveria ter aceitado seu destino</P>
+            <button class="btn-proximo" data-proximo="82">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="83">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-60">
+            <img src="https://pm1.aminoapps.com/6422/52ecd90fe347ca8a0d04357079b5a7e53d7f356f_hq.jpg">
+            <P>Boa! já são 5am, falta apenas 1 hora para você ser liberado. 
+                status de energia: 40%
+            </P>
+            <button class="btn-proximo" data-proximo="84">Manter as portas fechadas</button>
+            <button class="btn-proximo" data-proximo="85">Deixar as portas abertas</button>
+        </div>
+
+        <div class="passo" id="passo-61">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/e/e2/Bonnie%27s_jumpscare_gif.gif/revision/latest?cb=20240622070605">
+            <P>Ele te pegou </P>
+            <button class="btn-proximo" data-proximo="86">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="87">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-62">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/e/e2/Bonnie%27s_jumpscare_gif.gif/revision/latest?cb=20240622070605">
+            <P>Ele te pegou na esquerda </P>
+            <button class="btn-proximo" data-proximo="88">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="89">Sair</button>
+        </div>
+
+        <div class="passo" id="passo-63">
+            <img src="https://static.wikia.nocookie.net/charactercommunity/images/5/50/Chica%27s_jumpscare_gif.gif/revision/latest?cb=20240622070716">
+            <P>Ela finalmente conseguiu te pegar </P>
+            <button class="btn-proximo" data-proximo="88">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="89">Sair</button>
+        </div>
+
+         <div class="passo" id="passo-84">
+            <img src="https://www.pngall.com/wp-content/uploads/15/Five-Nights-At-Freddys-Logo-PNG-Image-HD.png">
+            <P>Meus parabéns! Você conseguiu passar a noite e foi liberado para ir para sua casa. Volte sempre que você quiser (se você conseguir)
+            </P>
+            <button class="btn-proximo" data-proximo="88">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="89">Sair</button>
+            <div>
+
+                <div class="passo" id="passo-63">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/57d17456-d9fa-4ee8-a444-b5444ca9230e/dbw8uy3-138b24c9-ecaa-4bd3-9212-985ce4b404ed.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi81N2QxNzQ1Ni1kOWZhLTRlZTgtYTQ0NC1iNTQ0NGNhOTIzMGUvZGJ3OHV5My0xMzhiMjRjOS1lY2FhLTRiZDMtOTIxMi05ODVjZTRiNDA0ZWQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9zTPnhBTbjmEqADCXxWiqkPwQnt1LcDkq2oxSGxsyfY">
+            <P>Você estava tão perto, sinto muito. </P>
+            <button class="btn-proximo" data-proximo="88">Reiniciar o jogo (reinicie a página)</button>
+            <button class="btn-proximo" data-proximo="89">Sair</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
